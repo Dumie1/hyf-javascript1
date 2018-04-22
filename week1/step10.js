@@ -10,4 +10,4 @@ console.log("Expected answer is true");
 console.log(num === num);
 console.log(num === x);
 console.log(x === x);
-//reference -> https://developer.mozilla.org/nl/docs/Web/JavaScript/Equality_comparisons_and_sameness
+// reference -> https://developer.mozilla.org/nl/docs/Web/JavaScript/Equality_comparisons_and_sameness
