@@ -1,3 +1,5 @@
+'use strict';
+
 const monday = [
   {
     name: 'Write a summary HTML/CSS',
@@ -54,4 +56,4 @@ let earnings = hoursWorked * hourWages;
 console.log("Hours paid= ", hoursWorked, "hour");
 console.log(Math.floor(hoursWorked));
 console.log("Maatrje`s wages will be hourWages multiplied by  workingTime per hour");
-console.log("Maatrje has earned €:", earnings.toFixed(2));
+console.log("Maatrje has earned €:", earnings.toFixed(0));
