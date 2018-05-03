@@ -1,23 +1,30 @@
 
 'use strict';
+
 const x = [1, 2, 3];
 const y = [1, 2, 3];
 const z = y;
-const array1 = [4, 8, 9, 10];
-const array2 = [4, 8, 9, 10];
 
-function equal(a, b) {
-  let same = a.length === b.length;
-  if (same) {
-    const len = a.length;
-    for (let i = 0; same && i < len; i++) {
-      if (a[i] !== b[i]) {
-        same = false;
-      }
-    }
-  }
-
-  return same;
+if (x == y) {
+  console.log('x & y are equal using ==');
+} else {
+  console.log('x & y are not equal using ==');
 }
 
-console.log(equal(array1, array2));
+if (x === y) {
+  console.log('x & y are equal using ===');
+} else {
+  console.log('x & y are not equal using ===');
+}
+
+if (z === y) {
+  console.log("z & y are equal using ===");
+} else {
+  console.log("z & y are not equal using ===");
+}
+
+if (x === z) {
+  console.log("x & z are equal using ===");
+} else {
+  console.log("x & z are not equal using ===");
+}

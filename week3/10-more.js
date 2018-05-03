@@ -1,6 +1,8 @@
 'use strict';
 
-let teachers = [
+let classHeads = {};
+
+const teachers = [
   { firstName: 'Jim', lastName: 'Cramer'},
   { firstName: 'Unmesh', lastName: 'Joshi' },
   { firstName: 'Philipp', lastName: 'Beau' },
@@ -13,4 +15,3 @@ teachers[2].language = ['HTML', 'CSS'];
 teachers[3].language = ['Git', 'CLI'];
 
 console.log(teachers);
-

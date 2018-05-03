@@ -4,7 +4,7 @@
 function vehicleType(color, code, age) {
 
     const vehicle = ['car', 'motorbike', 'caravan', 'bike'];
-    const condition = ' new ';
+    const condition = age <= 1 ? ' new ' : ' used ';
     
   if (code === 1) {
       console.log('a ' + color + condition + vehicle[0]);
