@@ -1,13 +1,37 @@
 'use strict';
 
 function advertisement(vehicleNames) {
+  let adText = "#1 vehicles retailer in the Netherlands. We cover: ";
+  const lastVehicle = "and " + vehicleNames[vehicleNames.length - 1] + "s.";
 
-  return 'Amazing Joe\'s Garage. We service ' + category + '.';
+  for (let i = 0; i < vehicleNames.length - 1; i++) {
+    adText += vehicleNames[i] + "s, "; 
+  }
+  return adText + lastVehicle;
 }
 
-let category = ['cars', ' motorbikes', ' caravans',' bikes'];
+let category = ["car", "motorbike", "caravan", "bike"];
 
 const text = advertisement(category);
 console.log(text);
 
-//I am not satisfied with this code...
+
+//Another way of solving the problem----
+
+/*'use strict';
+
+function advertisement(vehicleNames) {
+  const lastOccurence =
+    category.toString().replace(/,([^,]*)$/, " and ") +
+    category[category.length - 1];
+  const vehiclesString = lastOccurence.replace(/,/g, ", ");
+  return (
+    "#1 vehicles retailer in the Netherlands. We cover " + vehiclesString + "."
+  );
+}
+
+let category = ["car", "motorbike", "caravan", "bike"];
+
+const text = advertisement(category);
+console.log(text);
+*/

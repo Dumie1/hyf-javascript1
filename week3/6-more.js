@@ -1,15 +1,14 @@
 'use strict';
 
 function vehicleType(color, code, age) {
-
-    const condition = age <= 1 ? ' new'  : ' used';
-    if (code === 1){
-        console.log('a ' + color + condition + ' car');
+    const state = age <= 1 ? " new" : " used";
+    if (code === 1) {
+        return "a " + color + state + " car";
     } else if (code === 2) {
-        console.log('a ' + color + condition + ' motorbike');
+        return "a " + color + state + " motorbike";
     } else {
-        console.log('unknown vehicle');
+        return "unknown vehicle";
     }
 }
 
-vehicleType('blue', 2, 5);
+console.log(vehicleType("blue", 1, 1));

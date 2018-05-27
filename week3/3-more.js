@@ -1,16 +1,22 @@
 'use strict';
 
 function printObject(obj) {
-    
-    console.log('firstName = ' + obj.firstName);
-    console.log('lastName = ' + obj.lastName);
-    console.log('city = ' + obj.city);
+    return (
+        "firstName = " +
+        obj.firstName +
+        "\n" +
+        "lastName = " +
+        obj.lastName +
+        "\n" +
+        "city = " +
+        obj.city
+    );
 }
 
 const person = {
-    firstName: 'Maartje',
-    lastName: 'Kruijt',
-    city: 'Amsterdam'
+    firstName: "Maartje",
+    lastName: "Kruijt",
+    city: "Amsterdam"
 };
 
-printObject(person);
+console.log(printObject(person));

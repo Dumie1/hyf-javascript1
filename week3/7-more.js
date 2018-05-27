@@ -1,22 +1,33 @@
-
-'use strict';
+"use strict";
 
 function vehicleType(color, code, age) {
-
-    const vehicle = ['car', 'motorbike', 'caravan', 'bike'];
-    const condition = age <= 1 ? ' new ' : ' used ';
-    
-  if (code === 1) {
-      console.log('a ' + color + condition + vehicle[0]);
-  } else if (code === 2) {
-      console.log('a ' + color + condition + vehicle[1]);
-  } else if (code === 3) {
-      console.log('a ' + color + condition + vehicle[2]);
-  } else if (code === 4) {
-      console.log('a ' + color + condition + vehicle[3]);
-  } else {
-    console.log('unknown vehicle');
-  }
+    let category = ["car", "motorbike", "caravan", "bike"];
+    const state = age <= 1 ? " new " : " used ";
+    if (code === 1) {
+        return "a " + color + state + category[0];
+    } else if (code === 2) {
+        return "a " + color + state + category[1];
+    } else if (code === 3) {
+        return "a " + color + state + category[2];
+    } else if (code === 4) {
+        return "a " + color + state + category[3];
+    } else {
+        return "unknown vehicle";
+    }
 }
 
+console.log(vehicleType("yellow", 4, 1));
+
+//BETTER CODE BELOW----
+
+/*function vehicleType(color, code, age) {
+    const vehicle = ['car', 'motorbike', 'caravan', 'bike'];
+    const condition = age <= 1 ? ' new ' : ' used ';
+    if (code > vehicle.length) {
+        return 'unknown vehicle'
+    } else {
+        return 'a ' + color + condition + vehicle[code - 1];
+    }
+}
 vehicleType('green', 3, 1);
+*/
