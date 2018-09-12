@@ -6,7 +6,7 @@ const teachers = [
   { firstName: 'Jim', lastName: 'Cramer'},
   { firstName: 'Unmesh', lastName: 'Joshi' },
   { firstName: 'Philipp', lastName: 'Beau' },
-  { firstName: 'Hardit', lastName: 'Singh' },
+  { firstName: 'Hardit', lastName: 'Sing' },
 ];
 
 teachers[0].language = ['JavaScript'];
